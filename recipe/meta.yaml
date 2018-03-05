@@ -1,6 +1,6 @@
 {% set name = "simhash" %}
-{% set version = "1.7.1" %}
-{% set sha256 = "434811eb975e8888bb1e872fc8d532c3ca1b4c6475f5fb1a4456c0b2562e73c0" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "c625236c8685791e0074b6c4243b6c4a6bd26214c0f4a3a3153b9459703987f1" %}
 
 package:
   name: {{ name|lower }}
