@@ -1,24 +1,22 @@
-{% set name = "simhash" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "c625236c8685791e0074b6c4243b6c4a6bd26214c0f4a3a3153b9459703987f1" %}
+{% set version = "1.9.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: simhash
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/s/simhash/simhash-{{ version }}.tar.gz
+  sha256: 99fe945d675700ff1cb30ea616586010c8e46abef625b4959acd2636024f6af3
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
