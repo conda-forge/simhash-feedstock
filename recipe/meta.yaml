@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.1" %}
 
 package:
   name: simhash
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/simhash/simhash-{{ version }}.tar.gz
-  sha256: 99fe945d675700ff1cb30ea616586010c8e46abef625b4959acd2636024f6af3
+  sha256: 7cd59981fbad08bc656eb3bb8091547e5eee749302dd649019876c9c892a5868
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -28,7 +28,7 @@ about:
   home: https://leons.im/posts/a-python-implementation-of-simhash-algorithm/
   license: MIT
   license_family: MIT
-  summary: 'This is a Python implementation of [Simhash](http://www.wwwconference.org/www2007/papers/paper215.pdf)'
+  summary: This is a Python implementation of [Simhash](http://www.wwwconference.org/www2007/papers/paper215.pdf)
 
   dev_url: https://github.com/leonsim/simhash
 
