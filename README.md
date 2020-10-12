@@ -5,11 +5,11 @@ Home: https://leons.im/posts/a-python-implementation-of-simhash-algorithm/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/simhash-feedstock/blob/master/LICENSE.txt)
 
 Summary: This is a Python implementation of [Simhash](http://www.wwwconference.org/www2007/papers/paper215.pdf)
 
-
+Development: https://github.com/leonsim/simhash
 
 Current build status
 ====================
