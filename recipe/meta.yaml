@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: simhash
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/simhash/simhash-{{ version }}.tar.gz
-  sha256: 6e834269d84d25fd40c24edf019c3def8dc68029ffdab99fe089e88eb3b8553f
+  sha256: d486d44a1dde0245d0733b91c86d892e87a062c932a372d184f4d9ce970e2708
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
     - pip
   run:
     - python
+    - numpy
 
 test:
   imports:
